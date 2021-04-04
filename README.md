@@ -15,5 +15,5 @@ Report IP Address
 ```js
 const wrapper = require('raylen.js')
 
-wrapper.checkuser("IP Address", "API KEY", "REASON" Category).then(data => console.log(data))
+wrapper.checkuser("IP Address", "API KEY", "REASON", "Category").then(data => console.log(data))
 ```
