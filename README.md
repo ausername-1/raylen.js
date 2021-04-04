@@ -1,31 +1,19 @@
-du.js
+raylen.js
 ------------
 
-### What is du.js
-**du.js** is a wrapper for **Dangerous Users Database**
+### What is raylen.js
+**raylen.js** is a wrapper for **Abuse IP DB**
 
 ### Usage
-General Stats for **website**
+Check IP Address
 ```js
-const wrapper = require('dangeroususers')
+const wrapper = require('raylen.js')
 
-wrapper.stats().then(data => console.log(data))
+wrapper.checkip("IP Address", "API Key").then(data => console.log(data))
 ```
-Check User
+Report IP Address
 ```js
-const wrapper = require('dangeroususers')
+const wrapper = require('raylen.js')
 
-wrapper.checkuser("821471227230683186").then(data => console.log(data))
-```
-Report User
-```js
-const wrapper = require('dangeroususers')
-
-wrapper.reportuser("api-key", "user-to-report", "reason-of-reporting").then(data => console.log(data))
-```
-Delete all reports
-```js
-const wrapper = require('dangeroususers')
-
-wrapper.deleteallreports("api-key").then(data => console.log(data))
+wrapper.checkuser("IP Address", "API KEY", "REASON" Category).then(data => console.log(data))
 ```
