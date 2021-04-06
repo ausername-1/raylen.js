@@ -6,7 +6,6 @@
 }
 body{
     height: 100vh;
-    background-color: #1f1f1f;
 }
 .container {
     width: 400px;
@@ -14,11 +13,4 @@ body{
     border-radius: 8px;
     overflow: hidden;
     align-items: center;
-}
-
-.title {
-    color: white;
-}
-.subtitle {
-    color: white;
 }
